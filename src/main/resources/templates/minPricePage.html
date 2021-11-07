@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Min price page</title>
+</head>
+<body>
+<p th:text="'The smallest record has id ' + ${minPriceRecord.getId()}
+    + ', curr1 is ' + ${minPriceRecord.getCurr1()} + ', curr2 is ' + ${minPriceRecord.getCurr2()}
+    + ', cost is ' + ${minPriceRecord.getLprice()} + ' and was created ' + ${minPriceRecord.getTimes()}"></p>
+</body>
+</html>

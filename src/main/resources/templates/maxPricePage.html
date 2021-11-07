@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Max price page</title>
+</head>
+<body>
+<div th:if="${maxPriceRecord == null}">
+    <div>very bad</div>
+</div>
+<p th:text="'The higher record has id ' + ${maxPriceRecord.getId()}
+    + ', curr1 is ' + ${maxPriceRecord.getCurr1()} + ', curr2 is ' + ${maxPriceRecord.getCurr2()}
+    + ', cost is ' + ${maxPriceRecord.getLprice()} + ' and was created ' + ${maxPriceRecord.getTimes()}"></p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta http-equiv="refresh" content="10">
+</head>
+<body>
+    <p th:text="'The actual price between BTC/USD is ' + ${btc_usd} + '.'" />
+    <p th:text="'The actual price between ETH/USD is ' + ${eth_usd} + '.'" />
+    <p th:text="'The actual price between XRT/USD is ' + ${xrp_usd} + '.'" />
+    <p th:text="'The time of last changes is ' + ${time} + '.'" />
+</body>
+</html>
